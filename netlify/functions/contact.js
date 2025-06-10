@@ -22,7 +22,7 @@ exports.handler = async function (event, context) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        access_key: process.env.WEB3FORM_API_KEY,
+        apikey: process.env.WEB3FORM_API_KEY,
         name,
         email,
         message,
