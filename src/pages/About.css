@@ -1,0 +1,106 @@
+/* About.css */
+
+.about-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4c1d95; /* Tailwind's purple-800 */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .mission-grid,
+  .corporate-values-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  
+  .mission-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .corporate-values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  /* Shared tile styles */
+  .mission-tile,
+  .corporate-tile {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  /* Mission tile styles */
+  .mission-tile {
+    background-color: #e0f2fe; /* Tailwind's blue-100 */
+    color: #1e3a8a; /* Tailwind's blue-800 */
+  }
+  
+  .mission-tile:hover {
+    transform: scale(1.05);
+    background-color: #bae6fd; /* Tailwind's blue-200 */
+  }
+  
+  /* Corporate tile styles */
+  .corporate-tile {
+    background-color: #ede9fe; /* Tailwind's purple-100 */
+    color: #6b21a8; /* Tailwind's purple-800 */
+  }
+  
+  .corporate-tile:hover {
+    transform: scale(1.05);
+    background-color: #ddd6fe; /* Tailwind's purple-200 */
+  }
+  
+  /* Grid overrides for flexibility */
+  .custom-mission-grid,
+  .custom-values-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Animation delays (Mission) */
+  .mission-tile:nth-child(1) { animation-delay: 0.1s; }
+  .mission-tile:nth-child(2) { animation-delay: 0.2s; }
+  .mission-tile:nth-child(3) { animation-delay: 0.3s; }
+  .mission-tile:nth-child(4) { animation-delay: 0.4s; }
+  .mission-tile:nth-child(5) { animation-delay: 0.5s; }
+  .mission-tile:nth-child(6) { animation-delay: 0.6s; }
+  .mission-tile:nth-child(7) { animation-delay: 0.7s; }
+  
+  /* Animation delays (Corporate) */
+  .corporate-tile:nth-child(1) { animation-delay: 0.1s; }
+  .corporate-tile:nth-child(2) { animation-delay: 0.2s; }
+  .corporate-tile:nth-child(3) { animation-delay: 0.3s; }
+  .corporate-tile:nth-child(4) { animation-delay: 0.4s; }
+  .corporate-tile:nth-child(5) { animation-delay: 0.5s; }
+  .corporate-tile:nth-child(6) { animation-delay: 0.6s; }
+  .corporate-tile:nth-child(7) { animation-delay: 0.7s; }
+  .corporate-tile:nth-child(8) { animation-delay: 0.8s; }
+  .corporate-tile:nth-child(9) { animation-delay: 0.9s; }
+  .corporate-tile:nth-child(10) { animation-delay: 1s; }
+  
+  /* Animation keyframes */
+  @keyframes fadeUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
