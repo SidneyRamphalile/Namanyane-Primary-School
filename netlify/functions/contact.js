@@ -1,4 +1,4 @@
-const fetch = require("node-fetch"); // to make HTTP requests
+const fetch = require("node-fetch");
 
 exports.handler = async function (event, context) {
   if (event.httpMethod !== "POST") {
@@ -22,10 +22,10 @@ exports.handler = async function (event, context) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        api_key: process.env.WEB3FORM_API_KEY,
-        sender: { name, email },
+        access_key: process.env.WEB3FORM_API_KEY,
+        name,
+        email,
         message,
-        // you can add other Web3form options here if needed
       }),
     });
 
