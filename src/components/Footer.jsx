@@ -15,7 +15,7 @@ const Footer = () => {
                 href="tel:+27519108000"
                 className="hover:text-yellow-400 underline"
               >
-                051 910 8000
+                051 873 9154
               </a>
             </li>
             <li>
@@ -24,7 +24,7 @@ const Footer = () => {
                 href="tel:+27519109000"
                 className="hover:text-yellow-400 underline"
               >
-                051 910 9000
+                051 873 2079
               </a>
             </li>
             <li>
@@ -33,7 +33,7 @@ const Footer = () => {
                 href="tel:+27519295000"
                 className="hover:text-yellow-400 underline"
               >
-                051 929 5000
+                051 873 9800
               </a>
             </li>
           </ul>
@@ -88,10 +88,10 @@ const Footer = () => {
             <li>
               📧 Email:{" "}
               <a
-                href="mailto:info@namanyane.co.za"
+                href="mailto:namanyaneps1@gmail.com"
                 className="hover:text-yellow-400 underline"
               >
-                namanyane@gmail.com
+                namanyaneps1@gmail.com
               </a>
             </li>
           </ul>

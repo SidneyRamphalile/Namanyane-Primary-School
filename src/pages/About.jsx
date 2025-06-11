@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./About.css";
+import aboutUsBanner from "../assets/about-us-banner.jpg"; 
 
 const missionPoints = [
   "Empower communities",
@@ -76,7 +77,7 @@ const About = () => {
           data-aos-delay="500"
         >
           <img
-            src="/src/assets/about-us-banner.jpg"
+            src={aboutUsBanner}
             alt="Namanyane Primary School"
             className="w-full max-w-4xl h-auto rounded-lg shadow-lg object-cover"
             style={{ aspectRatio: "16 / 9" }}
@@ -171,14 +172,14 @@ const About = () => {
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        <p>📞 Tel: 051 873 2988</p>
+        <p>📞 Tel: 051 011 0309</p>
         <p>
           📧 Email:{" "}
           <a
             href="mailto:namanyane@gmail.com"
             className="underline text-purple-700"
           >
-            namanyane@gmail.com
+            namanyaneps1@gmail.com
           </a>
         </p>
       </div>

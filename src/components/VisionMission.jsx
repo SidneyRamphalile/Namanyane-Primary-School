@@ -1,8 +1,8 @@
 import React from "react";
+import missionImage from "../assets/our-mission.jpg"; // Make sure this file exists
 
 const visionImage =
   "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80";
-const missionImage = "/src/assets/our-mission.jpg";
 
 function VisionMission() {
   return (
