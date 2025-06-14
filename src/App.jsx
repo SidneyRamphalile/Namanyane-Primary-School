@@ -21,20 +21,22 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/staff" element={<Staff />} />
-          <Route path="/leadership" element={<Leadership />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resources" element={<Resources />} />
-        </Routes>
-      </main>
-      <Footer />
+    <div className="overflow-x-hidden">
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/staff" element={<Staff />} />
+            <Route path="/leadership" element={<Leadership />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resources" element={<Resources />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
