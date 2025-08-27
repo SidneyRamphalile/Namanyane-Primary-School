@@ -79,12 +79,26 @@ function Values() {
           {coreValues.map((value, i) => (
             <motion.div
               key={i}
-              className="bg-white p-4 rounded shadow hover:shadow-lg transition text-center text-gray-800 font-medium"
+              className="bg-white p-4 rounded-lg shadow text-center text-gray-800 font-medium 
+                         transition-all duration-200 
+                         hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-800 
+                         hover:text-white hover:shadow-[0_0_25px_rgba(168,85,247,0.9)]"
               custom={i}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={itemVariants}
+              whileHover={{
+                scale: 1.08,
+                y: -6,
+                transition: {
+                  type: "spring",
+                  stiffness: 500,
+                  damping: 20,
+                  duration: 0.15,
+                },
+              }}
+              whileTap={{ scale: 0.96 }}
             >
               {value}
             </motion.div>
