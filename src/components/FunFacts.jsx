@@ -36,16 +36,16 @@ const facts = [
 
 const FunFacts = () => {
   return (
-    <section className="bg-purple-50 py-12 px-6">
+    <section className="bg-gradient-to-br from-black via-purple-900 to-indigo-900 py-12 px-6 min-h-screen">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-purple-800 mb-10 text-center">
+        <h2 className="text-4xl font-bold text-center text-white mb-12 drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]">
           🎉 Fun & Interesting Facts
         </h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {facts.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md border border-purple-100 cursor-pointer"
+              className="bg-gradient-to-br from-purple-800 via-purple-700 to-indigo-800 p-6 rounded-xl shadow-lg border border-purple-500 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] cursor-pointer transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -61,12 +61,12 @@ const FunFacts = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-20 h-20 object-contain mx-auto mb-4"
+                className="w-20 h-20 object-contain mx-auto mb-4 filter drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
               />
-              <h3 className="text-lg font-semibold text-purple-700 mb-2 text-center">
+              <h3 className="text-lg font-semibold text-white mb-2 text-center drop-shadow-[0_0_5px_rgba(255,255,255,0.7)]">
                 {item.title}
               </h3>
-              <p className="text-gray-700 text-center">{item.fact}</p>
+              <p className="text-gray-200 text-center">{item.fact}</p>
             </motion.div>
           ))}
         </div>

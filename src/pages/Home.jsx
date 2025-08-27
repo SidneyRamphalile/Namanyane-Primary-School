@@ -13,7 +13,6 @@ function Home() {
       <Header />
       <Values />
       <VisionMission/>
-      <Announcements />
       <FunFacts/>
       <GoogleMap />
     </div>
