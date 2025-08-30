@@ -89,7 +89,7 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="https://www.facebook.com/share/1ArA4QSj6n/?mibextid=qi2Omg"
+              href="https://facebook.com/profile.php?id=61564437886779"
               target="_blank"
               rel="noreferrer"
             >
@@ -157,7 +157,7 @@ function Navbar() {
             Contact
           </Link>
           <a
-            href="https://www.facebook.com/YOUR_PAGE"
+            href="https://facebook.com/profile.php?id=61564437886779"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 px-4 py-2"
