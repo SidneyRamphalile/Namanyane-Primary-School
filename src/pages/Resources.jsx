@@ -7,16 +7,16 @@ const resourcesList = [
     name: "Admission Form",
     file: "/documents/admission-form.pdf",
   },
-  {
-    id: 2,
-    name: "School Activities Schedule",
-    file: "/documents/activities-schedule.pdf",
-  },
-  {
-    id: 3,
-    name: "School Calendar",
-    file: "/documents/school-calendar.pdf",
-  },
+  // {
+  //   id: 2,
+  //   name: "School Activities Schedule",
+  //   file: "/documents/activities-schedule.pdf",
+  // },
+  // {
+  //   id: 3,
+  //   name: "School Calendar",
+  //   file: "/documents/school-calendar.pdf",
+  // },
 ];
 
 // List of YouTube videos
