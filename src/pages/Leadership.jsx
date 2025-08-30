@@ -56,7 +56,7 @@ function Leadership() {
             <img
               src={leader.image}
               alt={leader.name}
-              className="w-60 h-72 object-cover mx-auto mb-5 border border-gray-200 shadow-sm rounded-lg"
+              className="w-64 h-80 object-cover mx-auto mb-5 border border-gray-200 shadow-sm rounded-xl"
             />
             <div className="text-xl font-semibold">{leader.name}</div>
             <div className="text-gray-600 mt-1">{leader.role}</div>

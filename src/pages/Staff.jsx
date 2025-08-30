@@ -9,7 +9,9 @@ import grade4teacherImage from "../assets/Mr Mosoetsa.jpg";
 import grade5teacherImage from "../assets/Mrs Seitshero.png";
 import grade6teacherImage from "../assets/Mrs Malefane.jpg";
 import grade7teacherImage from "../assets/Mrs Gailele.png";
-
+import adminClerkImage from "../assets/Mrs Kele.jpg";
+import janitorImage from "../assets/Mrs Mekgwe.jpg";
+import generalWorkerImage from "../assets/Mr Mototo.jpg";
 
 const staffMembers = [
   {
@@ -29,81 +31,50 @@ const staffMembers = [
   },
   {
     name: "Mr. L.I Mosoetsa",
-    role: "Grade 4 Teacher",
+    role: "Grade 4 Class Teacher",
     image: grade4teacherImage,
   },
   {
     name: "Mr. H.K Botipe",
-    role: "Grade 5 Teacher",
+    role: "Grade 5 Class Teacher",
     image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
   },
   {
     name: "Mrs. K.A Malefane",
-    role: "Grade 6 Teacher",
+    role: "Grade 6 Class Teacher",
     image: grade6teacherImage,
   },
   {
     name: "Mrs. K.M Gailele",
-    role: "Grade 7 Teacher",
+    role: "Grade 7 Class Teacher",
     image: grade7teacherImage,
   },
   {
-    name: "Mrs. Thandiwe Maseko",
-    role: "Secretary",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
+    name: "Mrs. Kele",
+    role: "Admin Clerk",
+    image: adminClerkImage,
   },
   {
-    name: "Mr. Isaac Molefe",
+    name: "Mrs. Mekgwe",
     role: "Janitor",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140058.png",
+    image: janitorImage,
   },
   {
-    name: "Miss Asanda Mhlongo",
+    name: "Mr. Mototo",
     role: "General Worker",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140061.png",
+    image: generalWorkerImage,
   },
   {
-    name: "Mrs. Palesa Motsoeneng",
-    role: "Grade R Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
+    name: "Mrs. Chef 1",
+    role: "Chef",
+    image: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
   },
   {
-    name: "Mr. Bongani Zulu",
-    role: "Security",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140058.png",
-  },
-  {
-    name: "Miss Asanda Mhlongo",
-    role: "General Worker",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140061.png",
-  },
-  {
-    name: "Mrs. Palesa Motsoeneng",
-    role: "Grade R Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
-  },
-  {
-    name: "Mr. Bongani Zulu",
-    role: "Security",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140058.png",
-  },
-  {
-    name: "Miss Asanda Mhlongo",
-    role: "General Worker",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140061.png",
-  },
-  {
-    name: "Mrs. Palesa Motsoeneng",
-    role: "Grade R Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
-  },
-  {
-    name: "Mr. Bongani Zulu",
-    role: "Security",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140058.png",
+    name: "Mrs. Chef 2",
+    role: "Chef",
+    image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
   },
 ];
-
 
 const Staff = () => {
   useEffect(() => {
@@ -135,7 +106,7 @@ const Staff = () => {
             <img
               src={staff.image}
               alt={staff.name}
-              className="w-40 h-48 object-cover mx-auto mb-5 border border-gray-200 shadow-sm rounded-lg"
+              className="w-64 h-80 object-cover mx-auto mb-5 border border-gray-200 shadow-sm rounded-xl"
             />
             <p className="text-lg font-semibold text-gray-800">{staff.name}</p>
             <p className="text-gray-600 mt-1">{staff.role}</p>
