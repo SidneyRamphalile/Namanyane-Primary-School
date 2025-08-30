@@ -2,41 +2,50 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import grade1teacherImage from "../assets/Mrs Pule.jpg";
+import grade2teacherImage from "../assets/Mrs Seitshero.png";
+import grade3teacherImage from "../assets/Mrs Selesho.jpg";
+import grade4teacherImage from "../assets/Mr Mosoetsa.jpg";
+import grade5teacherImage from "../assets/Mrs Seitshero.png";
+import grade6teacherImage from "../assets/Mrs Malefane.jpg";
+import grade7teacherImage from "../assets/Mrs Gailele.png";
+
+
 const staffMembers = [
   {
-    name: "Mrs. K Pule",
+    name: "Mrs. K.G Pule",
     role: "Grade 1 Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
+    image: grade1teacherImage,
   },
   {
-    name: "Mr. Daniel Mokoena",
+    name: "Mrs. S.C Seitshiro",
     role: "Grade 2 Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140058.png",
+    image: grade2teacherImage,
   },
   {
     name: "Miss Fatima Hassan",
     role: "Grade 3 Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140061.png",
+    image: grade3teacherImage,
   },
   {
-    name: "Mr. Themba Ndlovu",
-    role: "Mathematics Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140058.png",
+    name: "Mr. L.I Mosoetsa",
+    role: "Grade 4 Teacher",
+    image: grade4teacherImage,
   },
   {
-    name: "Mrs. Zanele Khumalo",
-    role: "Life Skills Teacher",
+    name: "Mr. H.K Botipe",
+    role: "Grade 5 Teacher",
     image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
   },
   {
-    name: "Mr. Sipho Dlamini",
-    role: "Science Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140058.png",
+    name: "Mrs. K.A Malefane",
+    role: "Grade 6 Teacher",
+    image: grade6teacherImage,
   },
   {
-    name: "Miss Lebo Mahlangu",
-    role: "Admin Assistant",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140061.png",
+    name: "Mrs. K.M Gailele",
+    role: "Grade 7 Teacher",
+    image: grade7teacherImage,
   },
   {
     name: "Mrs. Thandiwe Maseko",
