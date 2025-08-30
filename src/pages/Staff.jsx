@@ -25,7 +25,7 @@ const staffMembers = [
     image: grade2teacherImage,
   },
   {
-    name: "Miss Fatima Hassan",
+    name: "Mrs. K.M Selesho",
     role: "Grade 3 Teacher",
     image: grade3teacherImage,
   },

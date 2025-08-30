@@ -12,7 +12,7 @@ import methodist1 from "../assets/methodist-church-day-1.jpg";
 import methodist2 from "../assets/methodist-church-day-2.jpg";
 import methodist3 from "../assets/methodist-church-day-3.jpg";
 import methodist4 from "../assets/methodist-church-day-4.jpg";
-import methodist5 from "../assets/methodist-church-day-4.jpg";
+import staffroomTalk from "../assets/staffroomTalk.jpg";
 import soccerCones from "../assets/soccer-cones.jpg";
 import skippingRope from "../assets/skipping-rope.jpg";
 import soccer1 from "../assets/soccer-1.jpg";
@@ -24,9 +24,12 @@ import soccer6  from "../assets/soccer-6.jpg";
 import soccer7 from "../assets/soccer-7.jpg";
 import children from "../assets/children.jpg";
 import checkers from "../assets/checkers.jpg";
+import shoeDrive1 from "../assets/shoeDrive1.jpg";
+import shoeDrive2 from "../assets/shoeDrive2.jpg";
+import shoeDrive3 from "../assets/shoeDrive3.jpg";
 
 // Add images to the array
-const galleryItems = [sittingOutside, worldBook1, worldBook2, worldBook3, worldBook4, methodist1, methodist2, methodist3, methodist4, methodist5, soccerCones, skippingRope, soccer1, soccer2, soccer3, soccer4, soccer5, soccer6, soccer7, children, checkers];
+const galleryItems = [sittingOutside, worldBook1, worldBook2, worldBook3, worldBook4, methodist1, methodist2, methodist3, methodist4, staffroomTalk, soccerCones, skippingRope, soccer1, soccer2, soccer3, soccer4, soccer5, soccer6, soccer7, children, checkers, shoeDrive1, shoeDrive2, shoeDrive3];
 
 function Gallery() {
   useEffect(() => {
