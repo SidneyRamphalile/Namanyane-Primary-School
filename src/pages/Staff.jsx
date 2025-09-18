@@ -13,6 +13,8 @@ import adminClerkImage from "../assets/Mrs Kele.jpg";
 import janitorImage from "../assets/Mrs Mekgwe.jpg";
 import generalWorkerImage from "../assets/Mr Mototo.jpg";
 import gradeRTeacherImage from "../assets/Mrs Seapolelo.jpg";
+import gradeRTeacher2Image from "../assets/Mrs Tumi.jpg";
+
 
 
 const staffMembers = [
@@ -72,9 +74,9 @@ const staffMembers = [
     image:gradeRTeacherImage,
   },
   {
-    name: "Mrs. Tumi",
+    name: "Mrs. F.T Madikgetla",
     role: "Grade R Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
+    image: gradeRTeacher2Image,
   },
 ];
 
