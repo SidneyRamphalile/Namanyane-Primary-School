@@ -12,6 +12,8 @@ import grade7teacherImage from "../assets/Mrs Gailele.png";
 import adminClerkImage from "../assets/Mrs Kele.jpg";
 import janitorImage from "../assets/Mrs Mekgwe.jpg";
 import generalWorkerImage from "../assets/Mr Mototo.jpg";
+import gradeRTeacherImage from "../assets/Mrs Seapolelo.jpg";
+
 
 const staffMembers = [
   {
@@ -65,13 +67,13 @@ const staffMembers = [
     image: generalWorkerImage,
   },
   {
-    name: "Mrs. Chef 1",
-    role: "Chef",
-    image: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+    name: "Mrs. T.M Seapolelo",
+    role: "Grade R Teacher",
+    image:gradeRTeacherImage,
   },
   {
-    name: "Mrs. Chef 2",
-    role: "Chef",
+    name: "Mrs. Tumi",
+    role: "Grade R Teacher",
     image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
   },
 ];
