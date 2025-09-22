@@ -9,33 +9,40 @@ function Contact() {
 
   const [status, setStatus] = useState(null);
 
-  // Handle input changes
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  // Handle form submit
+  console.log("✅ Web3Forms Key Loaded:", process.env.REACT_APP_WEB3FORMS_KEY);
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
     try {
-      const res = await fetch("/.netlify/functions/contact", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.REACT_APP_WEB3FORMS_KEY, 
+          ...formData,
+        }),
       });
 
       const data = await res.json();
 
       if (res.ok) {
-        setStatus("Message sent successfully!");
+        setStatus("✅ Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus(`Error: ${data.error || "Failed to send message"}`);
+        setStatus(`❌ Error: ${data.message || "Failed to send message"}`);
       }
     } catch (error) {
-      setStatus("Error: Network or server issue");
+      setStatus("❌ Error: Network or server issue");
     }
   };
 
