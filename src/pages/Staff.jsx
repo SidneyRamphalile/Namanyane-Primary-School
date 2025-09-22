@@ -6,10 +6,11 @@ import grade1teacherImage from "../assets/Mrs Pule.jpg";
 import grade2teacherImage from "../assets/Mrs Seitshero.png";
 import grade3teacherImage from "../assets/Mrs Selesho.jpg";
 import grade4teacherImage from "../assets/Mr Mosoetsa.jpg";
-import grade5teacherImage from "../assets/Mrs Seitshero.png";
+import grade5teacherImage from "../assets/Mr Botipe.jpg";
 import grade6teacherImage from "../assets/Mrs Malefane.jpg";
 import grade7teacherImage from "../assets/Mrs Gailele.png";
 import adminClerkImage from "../assets/Mrs Kele.jpg";
+import intersenImage from "../assets/Mrs Ntimotse.jpg";
 import janitorImage from "../assets/Mrs Mekgwe.jpg";
 import generalWorkerImage from "../assets/Mr Mototo.jpg";
 import gradeRTeacherImage from "../assets/Mrs Seapolelo.jpg";
@@ -41,7 +42,7 @@ const staffMembers = [
   {
     name: "Mr. H.K Botipe",
     role: "Grade 5 Class Teacher",
-    image: "https://cdn-icons-png.flaticon.com/512/4140/4140047.png",
+    image: grade5teacherImage,
   },
   {
     name: "Mrs. K.A Malefane",
@@ -54,24 +55,29 @@ const staffMembers = [
     image: grade7teacherImage,
   },
   {
-    name: "Mrs. Kele",
+    name: "Mrs. D.N Ntimotse",
+    role: "Intersen Educator",
+    image: intersenImage,
+  },
+  {
+    name: "Ms. K.J Mokgwera",
     role: "Admin Clerk",
     image: adminClerkImage,
   },
   {
-    name: "Mrs. Mekgwe",
+    name: "Mrs. M.J Mekgwe",
     role: "Janitor",
     image: janitorImage,
   },
   {
-    name: "Mr. Mototo",
+    name: "Mr. M.S Mototo",
     role: "General Worker",
     image: generalWorkerImage,
   },
   {
     name: "Mrs. T.M Seapolelo",
     role: "Grade R Teacher",
-    image:gradeRTeacherImage,
+    image: gradeRTeacherImage,
   },
   {
     name: "Mrs. F.T Madikgetla",
