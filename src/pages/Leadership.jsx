@@ -4,8 +4,8 @@ import "aos/dist/aos.css";
 
 // Manually import images from local assets folder
 import principalImage from "../assets/principal.jpg";
-import deputyImage from "../assets/Mrs Seitshero.png";
-import hodImage from "../assets/Mrs Seapolelo.jpg";
+import hodImage from "../assets/Mrs Seitshero.png";
+import dhImage from "../assets/Mr Mosoetsa.jpg";
 
 function Leadership() {
   const leaders = [
@@ -16,13 +16,13 @@ function Leadership() {
     },
     {
       name: "Mrs S.C Seitshiro",
-      role: "Deputy Principal",
-      image: deputyImage,
+      role: "Head of Department",
+      image: hodImage,
     },
     {
       name: "Mrs. T.M Seapolelo",
-      role: "Head of Department",
-      image: hodImage,
+      role: "D.H",
+      image: dhImage,
     },
   ];
 
