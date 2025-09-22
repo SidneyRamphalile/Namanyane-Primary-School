@@ -20,7 +20,7 @@ function Leadership() {
       image: hodImage,
     },
     {
-      name: "Mrs. T.M Seapolelo",
+      name: "Mr L.I Mosoetsa",
       role: "D.H",
       image: dhImage,
     },
