@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Contact() {
+function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -9,12 +9,13 @@ function Contact() {
 
   const [status, setStatus] = useState(null);
 
+  // Handle input changes
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  console.log("✅ Web3Forms Key Loaded:", process.env.REACT_APP_WEB3FORMS_KEY);
-
+  // Debug: Check if key is loading
+  console.log("✅ Web3Forms Key Loaded:", import.meta.env.VITE_WEB3FORMS_KEY);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,7 +29,7 @@ function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: process.env.REACT_APP_WEB3FORMS_KEY, 
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
           ...formData,
         }),
       });
@@ -100,4 +101,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactUs;
