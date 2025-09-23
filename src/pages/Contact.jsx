@@ -14,8 +14,6 @@ function ContactUs() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  // Debug: Check if key is loading
-  console.log("✅ Web3Forms Key Loaded:", import.meta.env.VITE_WEB3FORMS_KEY);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
