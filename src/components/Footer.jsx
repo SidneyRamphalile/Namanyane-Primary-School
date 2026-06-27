@@ -99,9 +99,24 @@ const Footer = () => {
       </div>
 
       {/* Bottom line */}
-      <div className="text-center mt-8 text-md border-t border-white/20 pt-4">
-        &copy; {new Date().getFullYear()} Namanyane Primary School. All rights
-        reserved.
+      <div className="border-t border-white/20 mt-8 pt-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-center text-sm md:text-md">
+        <div className="order-1 md:order-1 md:text-left">
+          &copy; 2026 Namanyane Primary School.
+        </div>
+        <div className="order-3 md:order-2">
+          Developed by{" "}
+          <a
+            href="https://sidneyramphalile.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-400 underline text-yellow-400 font-semibold cursor-pointer"
+          >
+            Sidney
+          </a>
+        </div>
+        <div className="order-2 md:order-3 md:text-right">
+          All rights reserved.
+        </div>
       </div>
     </footer>
   );
