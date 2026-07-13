@@ -106,7 +106,7 @@ const Footer = () => {
         <div className="order-3 md:order-2">
           Developed by{" "}
           <a
-            href="https://sidneyramphalile.vercel.app"
+            href="https://sidneyramphalile.online"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-yellow-400 underline text-yellow-400 font-semibold cursor-pointer"
