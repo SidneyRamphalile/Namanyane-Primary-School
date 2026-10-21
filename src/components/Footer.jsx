@@ -1,4 +1,6 @@
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer
       className="bg-purple-800 text-white px-4 py-10 mt-auto"
@@ -99,24 +101,28 @@ const Footer = () => {
       </div>
 
       {/* Bottom line */}
-      <div className="border-t border-white/20 mt-8 pt-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-center text-sm md:text-md">
-        <div className="order-1 md:order-1 md:text-left">
-          &copy; 2026 Namanyane Primary School.
+      <div className="max-w-7xl mx-auto border-t border-white/20 mt-8 pt-8 flex flex-col items-center gap-3 text-center">
+        <div className="flex flex-col items-center gap-2 text-sm text-white/70 sm:flex-row sm:gap-4">
+          <p>&copy; {year} Namanyane Primary School.</p>
+          <span
+            className="hidden h-4 w-px bg-white/30 sm:block"
+            aria-hidden="true"
+          ></span>
+          <p>
+            Developed by{" "}
+            <a
+              href="https://sidneyramphalile.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-yellow-400 transition hover:text-yellow-300"
+            >
+              Sidney
+            </a>
+          </p>
         </div>
-        <div className="order-3 md:order-2">
-          Developed by{" "}
-          <a
-            href="https://sidneyramphalile.online"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-yellow-400 underline text-yellow-400 font-semibold cursor-pointer"
-          >
-            Sidney
-          </a>
-        </div>
-        <div className="order-2 md:order-3 md:text-right">
-          All rights reserved.
-        </div>
+        <p className="text-xs text-white/50">
+          Website &copy; {year} Sidney Ramphalile
+        </p>
       </div>
     </footer>
   );
